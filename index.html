@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simple Web Project</title>
+    <link rel="stylesheet" href="style.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=Inria+Serif:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
+
+</head>
+<body>
+    <div class="body">
+        <div class="header">
+            <div class="header-overlay"></div> <!-- Overlay added here -->
+            <h1 class="header-title header-item">MT Energy</h1>
+            <h4 class="header-subtitle header-item">Reliable, efficient energy solutions for your home.</h4>
+            <a href="#contact-form" class="booking-button header-item">Book an Appointment</a>
+        </div>
+        <div class="services">
+            <h1 class="services-title">Our Services</h1>
+            <hr>
+
+            <div class="service-group service-a">
+                <div class="service-left">
+                    <div class="service-text">
+                        <h1 class="service-title">Residential electrical</h1>
+                        <p class="sercie-desc">Installations and upgrades, including EV chargers and smart panels like SPAN for safer, more efficient energy use.</p>
+                    </div>
+                </div>
+                <div class="service-right">
+                    <div class="service-image" id="residential-electrical">
+
+                    </div>
+                </div>
+            </div>
+
+            <div class="service-group service-b">
+                <div class="service-left">
+                    <div class="service-text">
+                        <h1 class="service-title">Solar & battery backups</h1>
+                        <p class="sercie-desc">Reduce your energy costs with solar panels and battery storage, with options for $0 upfront.</p>
+                    </div>
+                </div>
+                <div class="service-right">
+                    <div class="service-image" id="solar">
+
+                    </div>
+                </div>
+            </div>
+
+            <div class="service-group service-a">
+                <div class="service-left">
+                    <div class="service-text">
+                        <h1 class="service-title">HVAC</h1>
+                        <p class="sercie-desc">Energy-efficient heating and cooling solutions, including heat pump mini splits, boilers, and air-to-water heaters.</p>
+                    </div>
+                </div>
+                <div class="service-right">
+                    <div class="service-image" id="hvac">
+
+                    </div>
+                </div>
+            </div>
+
+            <div class="service-group service-b">
+                <div class="service-left">
+                    <div class="service-text">
+                        <h1 class="service-title">Radiant floor heating</h1>
+                        <p class="sercie-desc">Even, comfortable heat underfoot with high-efficiency radiant floor systems.</p>
+                    </div>
+                </div>
+                <div class="service-right">
+                    <div class="service-image" id="floor">
+
+                    </div>
+                </div>
+            </div>
+
+        </div>
+        <div id="contact-form">
+            <h1 class="contact-title">Book an Appointment</h1>
+            <form action="https://formsubmit.co/parker.g.ford@gmail.com" method="POST">
+                <div class="contact-group">
+                    <div class="contact-left">
+                        <input type="text" name="name" placeholder="Name*" required>
+                        <input type="email" name="email" placeholder="Email*" required>
+                        <input type="text" name="name" placeholder="Phone">
+                        <input type="text" name="email" placeholder="Adress">
+                    </div>
+                    <div class="contact-right">
+                        <textarea name="message" placeholder="Message"></textarea>
+                    </div>
+                </div>
+                <div class="send-button">
+                    <button type="submit">Send</button>
+                </div>
+            </form>   
+          </div>
+    </div>
+    <div class="contact-info">
+        <h1 class="contact-info-title">Contact</h1>
+        <div class="contact-info-group">
+            <div class="contact-info-left">
+                <div class="contact-info-text">
+                    <h2><span class="bold">Phone:</span> (406) 544-4296</h2>
+                    <h2><span class="bold">Email:</span> noah@gomtenergy.com</h2>
+                    <h2><span class="bold">Hours:</span> 8-5 M-F, Saturday and Sunday appointment only</h2>
+                </div>      
+            </div>
+            <div class="contact-info-right">
+                <div class="logo"></div>
+            </div>
+        </div>
+    </div>
+    <footer class="footer">
+        <p>&copy; 2025 MT Energy. All rights reserved.</p>
+    </footer>
+</body>
+</html>

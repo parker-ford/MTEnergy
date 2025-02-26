@@ -1,0 +1,528 @@
+body {
+    margin: 0;
+    padding: 0;
+}
+.header {
+    background-image: url(./images/header.png);
+    background-size: cover;
+    background-position: center;
+    height: 500px;
+    display: flex;
+    flex-direction: column;
+    justify-content:end;
+    align-items: center;
+
+    /* padding-left: 150px; */
+    padding-bottom: 20px;
+    color: white;
+
+    position: relative;
+    overflow: hidden;
+}
+
+.header::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-image: url(./images/header2.png);
+    background-size: cover;
+    background-position: center;
+    filter: blur(0px);
+    z-index: 1;
+}
+
+.header-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    /* background: linear-gradient(to top, rgba(9, 35, 58, 0.8), rgba(0, 0, 0, 0.0)); */
+    background: linear-gradient(to top, rgba(0, 0, 0, 1.0) 25%, rgba(0, 0, 0, 0.0) 95%);
+    z-index: 2;
+    margin: 0;
+}
+
+.header-item {
+    margin: 5px;
+    position: relative;
+    z-index: 3; 
+}
+
+.header-title {
+    font-family: "DM Serif Display", serif;
+    font-size: 80px;
+    font-weight: 200;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.9);
+}
+
+.header-subtitle {
+    font-family: "Inter", sans-serif;
+    font-weight: 400;
+    font-size: 15px;
+}
+
+.booking-button {
+    height: 50px;
+    background-color: rgb(170, 15, 15);
+    padding-left: 40px;
+    padding-right: 40px;
+    border-radius: 5px;
+    font-family: "Inter", sans-serif;
+    color: white;
+    text-decoration: none;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start; 
+
+    font-weight: 700;
+
+    margin-top: 20px;
+}
+
+.booking-button:hover {
+    filter: brightness(1.2);
+}
+
+.services {
+    /* height: 5000px; */
+    /* background-color: green; */
+    display: flex;
+    flex-direction: column;
+    /* justify-content:end; */
+    align-items: center;
+
+}
+
+hr {
+    border: 0;
+    border-top: 1px solid #000;
+    margin: 20px 0;
+    height: 2px;
+    width: 80%;
+
+    margin-bottom: 100px;
+}
+
+.services-title {
+    font-family: "DM Serif Display", serif;
+    font-weight: 100;
+    font-size: 40px;
+    padding-top: 75px;
+}
+
+.service-group {
+    height: 500px;
+    /* background-color: red; */
+    width: 80%;
+
+    display: flex;
+
+    margin-top: -150px;
+    
+}
+
+.service-a {
+    flex-direction: row;
+}
+
+.service-b {
+    flex-direction: row-reverse;
+}
+
+.service-left {
+    height: 100%;
+    width: 50%;
+    /* background-color: green; */
+}
+
+.service-right {
+    height: 100%;
+    width: 50%;
+    /* background-color: blue; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.service-text {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content:center;
+    align-items: center;
+}
+
+.service-text * {
+    padding-left: 100px;
+    padding-right: 100px;
+    text-align: center;
+    margin: 0;
+}
+
+.service-text p {
+    margin-top: 20px;
+    font-family: "Inter";
+    font-size: 16px;
+}
+
+.service-image {
+    width: 80%;
+    height: 65%;
+    /* background-color: purple; */
+    background-image: url(./images/header2.png);
+    background-size: cover;
+    background-position: center;
+}
+
+#residential-electrical {
+    background-image: url("./images/residential_electrical.png");
+}
+
+#solar {
+    background-image: url("./images/solar.png");
+}
+
+#hvac {
+    background-image: url("images/hvac.png");
+}
+
+#floor {
+    background-image: url("./images/floor.jpg");
+}
+
+
+#contact-form {
+    background-color: rgb(9,35,58);
+
+    display: flex;
+    flex-direction: column;
+    /* justify-content:end; */
+    align-items: center;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+#contact-form form {
+    width: 80%;
+}
+
+.contact-title {
+    color: white;
+}
+
+form,
+form input, 
+form textarea, 
+form button{
+    font-family: "Inter", sans-serif;
+}
+
+.contact-group {
+    /* height: 500px; */
+    /* background-color: red; */
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    font-family: "Inter";
+    
+}
+
+.contact-left {
+    height: 100%;
+    width: 50%;
+    /* background-color: green; */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    /* padding: 20px; */
+}
+
+.contact-left * {
+    width: 90%;
+    height: 35px;
+    /* margin: 40px; */
+}
+
+.contact-right {
+    height: 100%;
+    width: 50%;
+    /* background-color: blue; */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+
+.contact-right * {
+    width: 90%;
+    height: 190px;
+}
+
+.send-button {
+    width: 100%;
+    margin-top: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.send-button button {
+    height: 50px;
+    background-color: rgb(170, 15, 15);
+    padding-left: 40px;
+    padding-right: 40px;
+    border-radius: 5px;
+    font-family: "Inter", sans-serif;
+    color: white;
+    text-decoration: none;
+    border-width: 0px;
+    font-weight: 700;
+    font-size: 16px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.send-button button:hover {
+    filter: brightness(1.2);
+}
+
+.contact-info {
+    display: flex;
+    flex-direction: column;
+    /* justify-content:end; */
+    align-items: center;
+}
+
+.contact-info-title {
+    margin-top: 50px;
+}
+
+.contact-info-group {
+    display: flex;
+    flex-direction: row;
+    /* background-color: red; */
+    width: 50%;
+    height: 200px;
+}
+
+.contact-info-left {
+    height: 100%;
+    width: 50%;
+    /* background-color: green; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.contact-info-right {
+    height: 100%;
+    width: 50%;
+    /* background-color: blue; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.contact-info-text {
+    width: 75%
+}
+
+.contact-info-text *{
+    font-family: "Inter", sans-serif;
+    font-size: 18px;
+    font-weight: 400;
+}
+
+.contact-info-text .bold{
+    font-weight: 700;
+}
+
+.logo {
+    width: 75%;
+    height: 75%;
+    /* background-color: purple; */
+    background-image: url("./images/logo.jpg");
+    background-size: cover;
+    background-position: center;
+}
+
+.footer {
+    background-color: rgb(29, 29, 29);
+    color: rgb(167, 167, 167);
+    margin: 0px;
+    height: 50px;
+    margin-top: 40px;
+    display: flex;
+    align-items: center;
+    padding-left: 40px;
+}
+
+.footer * {
+    margin: 0px;
+}
+
+@media only screen and (max-width: 768px) { 
+
+    .services {
+        margin-bottom: 40px;
+    }
+
+   .service-a {
+        flex-direction: column-reverse;
+    }
+
+    .service-b {
+        flex-direction: column-reverse;
+    }
+
+    .service-group {
+        height: 500px;
+        /* background-color: red; */
+        width: 100%;
+    
+        display: flex;
+        align-items: center;
+    
+        margin-top: 0px;
+    }
+
+    .service-left {
+        width: 100%;
+        height: 30%;
+    }
+
+    .service-right {
+        width: 100%;
+    }
+
+    .service-text {
+        width: 100%;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content:center;
+        align-items: center;
+    }
+
+    .service-text * {
+        padding-left: 20px;
+        padding-right: 20px;
+        text-align: center;
+        margin: 0;
+    }
+
+    .service-image {
+        width: 80%;
+        height: 75%;
+        background-size: cover;
+        background-position: center;
+    }
+
+    hr {
+        border: 0;
+        border-top: 1px solid #000;
+        margin: 20px 0;
+        height: 2px;
+        width: 80%;
+    
+        margin-bottom: 10px;
+    }
+
+    .contact-group {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .contact-left {
+        height: 100%;
+        width: 100%;
+        /* background-color: green; */
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 10px;
+        /* padding: 20px; */
+    }
+    
+    .contact-left * {
+        width: 90%;
+        height: 35px;
+        /* margin: 40px; */
+    }
+    
+    .contact-right {
+        height: 100%;
+        width: 100%;
+        /* background-color: blue; */
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    
+    .contact-right * {
+        width: 90%;
+        height: 190px;
+    }
+
+    .contact-info-group {
+        display: flex;
+        flex-direction: column;
+        /* background-color: red; */
+        width: 80%;
+        height: 400px;
+    }
+    
+    .contact-info-left {
+        height: 100%;
+        width: 100%;
+        /* background-color: green; */
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    
+    .contact-info-right {
+        height: 100%;
+        width: 100%;
+        /* background-color: blue; */
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    
+    .contact-info-text {
+        text-align: center;
+        width: 75%
+    }
+    
+    .contact-info-text *{
+        font-family: "Inter", sans-serif;
+        font-size: 18px;
+        font-weight: 400;
+    }
+    
+    .contact-info-text .bold{
+        font-weight: 700;
+    }
+    
+    .logo {
+        width: 75%;
+        height: 75%;
+        /* background-color: purple; */
+        background-image: url("./images/logo.jpg");
+        background-size: cover;
+        background-position: center;
+    }
+}
