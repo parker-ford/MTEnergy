@@ -47,7 +47,7 @@ body {
 }
 
 .header-item {
-    margin: 5px;
+    margin: 2.5px;
     position: relative;
     z-index: 3; 
 }
@@ -62,7 +62,8 @@ body {
 }
 
 .header-title {
-    font-family: "DM Serif Display", serif;
+    /* font-family: "DM Serif Display", serif; */
+    font-family: "Poppins", sans-serif;
     font-size: 80px;
     font-weight: 200;
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.9);
